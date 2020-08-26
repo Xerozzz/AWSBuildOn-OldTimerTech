@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"awsbuildonb0076634": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
