@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../../public/static/css/App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
