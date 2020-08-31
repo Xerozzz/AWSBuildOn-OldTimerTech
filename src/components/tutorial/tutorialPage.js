@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import TutorialRow from './tutorialRow';
 import Nav from '../global/Nav'
 
-class TutorialPage extends PureComponent {
+export default class TutorialPage extends PureComponent {
     static propTypes =
     {
         tutorialData: PropTypes.array
