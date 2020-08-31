@@ -35,5 +35,3 @@ class TutorialPage extends PureComponent {
         )
     }
 }
-
-export default TutorialPage;

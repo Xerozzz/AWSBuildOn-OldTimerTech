@@ -24,5 +24,3 @@ export default class TutorialRow extends PureComponent
         </div>
     }
 }
-
-export default TutorialRow;
