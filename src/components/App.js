@@ -6,7 +6,8 @@ import TutorialPage from './tutorial/tutorialPage'
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       {/* <Nav>
 
       </Nav> */}
@@ -20,6 +21,7 @@ function App() {
     
       <AmplifySignOut />
     </div>
+    </Router>
   );
 }
 
