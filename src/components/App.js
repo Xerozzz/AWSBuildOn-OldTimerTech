@@ -7,9 +7,9 @@ import TutorialPage from './tutorial/tutorialPage'
 function App() {
   return (
     <div className="App">
-      <Nav>
+      {/* <Nav>
 
-      </Nav>
+      </Nav> */}
       <header>
         <p>yeyes</p>
         <h1>Auth is cool!</h1>
