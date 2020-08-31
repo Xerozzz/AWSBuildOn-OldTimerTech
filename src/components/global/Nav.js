@@ -5,7 +5,7 @@ class Nav extends React.Component {
     render() {
         return(
             <nav>
-                
+                <NavLink to="/tutorialPage">Tutorials Page</NavLink>
             </nav>
         )
     }
