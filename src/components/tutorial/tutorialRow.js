@@ -18,9 +18,11 @@ export default class TutorialRow extends PureComponent
     }
     render()
     {
-        <div className="tutorial-row">
-            <span className="title">{this.props.tutName}</span>
-            <span className="progress">{this.props.tutProgress}/{this.props.tutTotal}</span>
-        </div>
+        return (
+            <div className="tutorial-row">
+                <span className="title">{this.props.tutName}</span>
+                <span className="progress">{this.props.tutProgress}/{this.props.tutTotal}</span>
+            </div>
+        )
     }
 }
