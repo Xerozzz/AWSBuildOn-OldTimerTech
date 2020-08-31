@@ -7,11 +7,11 @@ class Nav extends React.Component {
             <nav>
                 <h3>Old Timer Tech</h3>
                 <ul>
-                    <li>
-                        <NavLink to="/tutorial">Tutorials</NavLink>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="../tutorial/tutorialPage">Tutorials</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="/voucher"></NavLink>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="../voucher/vouchersPage">Vouchers</NavLink>
                     </li>
                 </ul>
             </nav>
