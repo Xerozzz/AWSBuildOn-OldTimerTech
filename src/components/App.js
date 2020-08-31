@@ -3,29 +3,25 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Nav from './global/Nav'
 import { Switch, Route, Router } from 'react-router-dom'
 import TutorialPage from './tutorial/tutorialPage'
+import TutorialRow from './tutorial/tutorialRow'
+import history from '../history'
 
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <div>
-      <Switch>
-          <Route path="/tutorialsPage">
+          <Route exact path="/tutorialsPage">
             <TutorialPage />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-          <div className="App">
-      <header>
-        <p>yeyes</p>
-        <h1>Auth is cool!</h1>
-      </header>
-      <AmplifySignOut />
-      </div>
-      
-          </Route>
-        </Switch>
+          <Route exact path="/">
+              <div className="App">
+          <header>
+            <p>yeyes</p>
+            <h1>Auth is cool!</h1>
+          </header>
+          <AmplifySignOut />
+          </div>
+          </Route>      
         </div>
     </Router>
   );

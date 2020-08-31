@@ -6,10 +6,35 @@ import TutorialRow from './tutorialRow';
 import Nav from '../global/Nav'
 
 export default class TutorialPage extends PureComponent {
-    static propTypes =
+
+    constructor(props)
     {
-        tutorialData: PropTypes.array
-    };
+        super(props);
+        this.state = {
+            tutorialData: 
+            [
+                {
+                    tutName: 'tutorialName1',
+                    tutProgress: '1',
+                    tutTotal: '2',
+                    tutCompleted: true
+                },
+                {
+                    tutName: 'sampleData',
+                    tutProgress: '1',
+                    tutTotal: '2',
+                    tutCompleted: true
+                },
+                {
+                    tutName: 'sampleData2',
+                    tutProgress: '1',
+                    tutTotal: '24',
+                    tutCompleted: false
+                }
+            ]
+        
+        }
+    }
 
     render() {
         return(
@@ -21,7 +46,7 @@ export default class TutorialPage extends PureComponent {
                     <h1>D-D-DISCOMMUNICATION</h1>
                 </header>
                 <div>
-                    {this.props.tutorialData.map(res => (
+                    {this.state.tutorialData.map(res => (
                         <TutorialRow
                             tutName = {res.tutName}
                             tutProgress = {res.tutProgress}
