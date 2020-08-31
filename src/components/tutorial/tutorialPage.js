@@ -21,14 +21,14 @@ export default class TutorialPage extends PureComponent {
                     <h1>D-D-DISCOMMUNICATION</h1>
                 </header>
                 <div>
-                    {this.props.tutorialData.map(res => {
+                    {this.props.tutorialData.map(res => (
                         <TutorialRow
                             tutName = {res.tutName}
                             tutProgress = {res.tutProgress}
                             tutTotal = {res.tutTotal}
                             tutCompleted = {res.tutCompleted}
                         />
-                    })}
+                    ))}
 
                 </div>
             </div>
