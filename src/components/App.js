@@ -1,7 +1,7 @@
 import React from 'react';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Nav from './global/Nav'
-import Switch from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 import TutorialPage from './tutorial/tutorialPage'
 
 function App() {
