@@ -14,9 +14,9 @@ function App() {
         <p>yeyes</p>
         <h1>Auth is cool!</h1>
       </header>
-      <Switch>
+      {/* <Switch>
         <Route path='tutorialsPage' component={TutorialPage}/>
-      </Switch>
+      </Switch> */}
       <AmplifySignOut />
     </div>
   );
