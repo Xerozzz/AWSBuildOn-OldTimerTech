@@ -14,11 +14,10 @@ function App() {
         <p>yeyes</p>
         <h1>Auth is cool!</h1>
       </header>
-      <Router>
-        <Switch>
-          <Route path='tutorialsPage' component={TutorialPage}/>
-        </Switch>
-      </Router>   
+      <Route path='/tutorialsPage' component={TutorialPage}>
+        <TutorialPage />
+      </Route>
+    
       <AmplifySignOut />
     </div>
   );
