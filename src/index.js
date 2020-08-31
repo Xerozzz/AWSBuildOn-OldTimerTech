@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 // import * as serviceWorker from './serviceWorker';
 import Amplify, { Auth } from 'aws-amplify';
+import { Switch, Route, Router } from 'react-router-dom'
 import config from './aws-exports';
 Amplify.configure(config);
 

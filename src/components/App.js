@@ -7,20 +7,26 @@ import TutorialPage from './tutorial/tutorialPage'
 function App() {
   return (
     <Router>
-      <div className="App">
-      {/* <Nav>
-
-      </Nav> */}
+      <div>
+      <Switch>
+          <Route path="/tutorialsPage">
+            <TutorialPage />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+          <div className="App">
       <header>
         <p>yeyes</p>
         <h1>Auth is cool!</h1>
       </header>
-      <Route path='/tutorialsPage' component={TutorialPage}>
-        <TutorialPage />
-      </Route>
-    
       <AmplifySignOut />
-    </div>
+      </div>
+      
+          </Route>
+        </Switch>
+        </div>
     </Router>
   );
 }
