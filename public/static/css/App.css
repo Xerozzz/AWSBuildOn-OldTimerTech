@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, #F5F5F5, #e3ecff);
 }
 
 nav {
@@ -17,4 +18,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  color: #FF0073;
 }
+

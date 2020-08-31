@@ -12,12 +12,14 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
+
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/tutorial" component={Tutorial} />
           <Route path="/voucher" component={Voucher} />
           <AmplifySignOut />
         </Switch>
+
         <Footer />
       </div>
     </Router>
