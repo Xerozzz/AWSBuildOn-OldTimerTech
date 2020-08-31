@@ -6,12 +6,12 @@ class Nav extends React.Component {
         return(
             <nav>
                 <h3>Old Timer Tech</h3>
-                <ul>
+                <ul className="nav-link">
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="../tutorial/tutorialPage">Tutorials</NavLink>
+                        <NavLink className="nav-link" to="/tutorial">Tutorials</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="../voucher/vouchersPage">Vouchers</NavLink>
+                        <NavLink className="nav-link" to="/voucher">Vouchers</NavLink>
                     </li>
                 </ul>
             </nav>

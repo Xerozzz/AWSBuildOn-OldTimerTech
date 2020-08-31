@@ -1,17 +1,27 @@
-import React from 'react';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
-import Nav from './global/Nav'
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav from "./global/Nav";
+import Footer from "./global/Footer";
+import Tutorial from "./tutorial/Tutorial";
+import Voucher from "./voucher/Voucher";
+import Home from "./home/Home";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <h1>Auth is cool!</h1>
-      </header>
-      <AmplifySignOut />
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/tutorial" component={Tutorial} />
+          <Route path="/voucher" component={Voucher} />
+          <AmplifySignOut />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
-
 
 export default withAuthenticator(App);
