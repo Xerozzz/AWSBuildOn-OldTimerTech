@@ -11,7 +11,7 @@ function App() {
 
       </Nav>
       <header>
-        <p>yeye</p>
+        <p>yeyes</p>
         <h1>Auth is cool!</h1>
       </header>
       <Switch>
