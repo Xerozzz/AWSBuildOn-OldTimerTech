@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 
 class Voucher extends React.Component{
     render(){
