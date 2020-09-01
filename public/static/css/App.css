@@ -3,6 +3,7 @@
   background-image: linear-gradient(to right, #F5F5F5, #e3ecff);
 }
 
+/*Nav Styles*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -21,6 +22,24 @@ nav {
   color: #FF0073;
 }
 
+/*voucher Table Styles*/
 table{
-  color: red;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  text-align: center;
+  padding:20px;
+  border: 1px solid black;
+}
+
+#balance{
+  text-align:center;
+}
+
+#voucher_page{
+  font-size: x-large;
 }
