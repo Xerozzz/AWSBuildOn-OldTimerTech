@@ -1,0 +1,114 @@
+.tutorial-row
+{
+    border: 2px solid white;
+    width: 100%;
+    background-color: #00AAAA;
+    height: 5rem;
+}
+.title
+{
+    color: white;
+    margin-left: 1rem;
+    margin-top: 4px;
+    font-size: large;
+    font-weight: bold;
+    /* padding-bottom: 2rem; */
+}
+.progr
+{
+    color: whitesmoke;
+    margin-left: 1rem;
+
+}
+.sidebar
+{
+    background-color: lightblue;
+    border: 2px solid white;
+}
+
+.nowhite
+{
+    margin: 0;
+}
+
+.selected
+{
+    background-color: teal;
+}
+
+body
+{
+    overflow: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+}
+
+.box
+{
+    overflow: auto;
+    min-height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+html, body, #app, #app>div, .App {
+    height: 100vh
+  }
+
+  .mainTutorial
+  {
+      height: 450px;
+      background-color: whitesmoke;
+  }
+
+  .video
+  {
+      height: 350px;
+      background-color: red;
+      width: 100%;
+  }
+
+  .videoTitle
+  {
+      font-size: x-large;
+      margin-left: 30px;
+      clear: both;
+      width: 100%;
+  }
+  
+  .videoDescription
+  {
+      font-size: medium;
+      margin-left: 30px;
+      clear: both;
+  }
+
+  .tutorial-page-part-row
+  {
+      margin-top: 10px;
+      background-color: lightblue;
+      color: white;
+      padding: 6px;
+  }
+
+  .tutTitle
+  {
+      font-weight: bold;
+    
+     
+  }
+  .tutDescription
+  {
+
+  }
+  
+  .selected
+  {
+      background-color: teal;
+  }

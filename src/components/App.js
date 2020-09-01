@@ -5,12 +5,13 @@ import { Switch, Route, Router } from 'react-router-dom'
 import TutorialPage from './tutorial/tutorialPage'
 import TutorialRow from './tutorial/tutorialRow'
 import history from '../history'
+import '../components/tutorial/tutorials.css'
 
 function App() {
   return (
     <Router history={history}>
-      <div>
-          <Route exact path="/tutorialsPage">
+      <div className='App' style={{height: '100vh', overflow: 'auto', margin: '0', padding: '0'}}>
+          <Route path="/tutorialsPage">
             <TutorialPage />
           </Route>
           <Route exact path="/">
