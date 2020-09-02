@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import './tutorials.css'
 import { propTypes } from "react-bootstrap/esm/Image";
 import { Redirect } from "react-router-dom";
 

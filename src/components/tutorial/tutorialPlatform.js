@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import TutorialRow from './tutorialRow';
 import TutorialPagePart from './tutorialPagePart'
-import './tutorials.css'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col } from 'react-bootstrap';
 
 import { createBrowserHistory } from 'history';

@@ -1,11 +1,8 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 
 import TutorialRow from './tutorialRow';
 import TutorialPlatform from './tutorialPlatform';
-import './tutorials.css'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col } from 'react-bootstrap';
 
 import { createBrowserHistory } from 'history';
