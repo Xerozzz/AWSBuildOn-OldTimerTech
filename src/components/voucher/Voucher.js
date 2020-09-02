@@ -5,16 +5,16 @@ class Voucher extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          user_info: 0
+            user_info: 0
         };
+        this.username = localStorage.getItem('CognitoIdentityServiceProvider.7onc1lch198q81avn7tfmc190m.LastAuthUser')
         this.redeemVoucher = this.redeemVoucher.bind(this)
     }
 
     componentDidMount() {
-        axios.get(`https://oa27ptvv12.execute-api.ap-southeast-1.amazonaws.com/prod/user-info`,{headers:{user_id:"0"}})
+        axios.get(`https://oa27ptvv12.execute-api.ap-southeast-1.amazonaws.com/prod/user-info`,{headers:{username:"Xeroz"}})
             .then(res => {
-                const user_info = res.data.path.Item;
-                console.log(user_info)
+                const user_info = res.data.user.Item;
                 this.setState({user_info: user_info})
             })
     }
@@ -30,22 +30,36 @@ class Voucher extends React.Component{
                     <tr>
                         <th>Voucher Name</th>
                         <th>Discount Percentage</th>
+                        <th>Points Cost</th>
                         <th>Redemption</th>
                     </tr>
                     <tr>
                         <td>NTUC Voucher</td>
                         <td>10%</td>
-                        <td><button onclick={this.redeemVoucher}>Redeem</button></td>
+                        <td>5</td>
+                        <td><button onClick={this.redeemVoucher}>Redeem</button></td>
                     </tr>
                 </table>
             </body>
         );
     }
 
-    // redeemVoucher(event) {
-    //     event.preventDefault()
-    //     const user_id = 
-    // }
+    redeemVoucher(event) {
+        event.preventDefault()
+        const requestBody = {
+            username: this.username,
+            balance: this.state.user_info.Balance
+        }
+
+        axios.post(`https://oa27ptvv12.execute-api.ap-southeast-1.amazonaws.com/prod/vouchers`, requestBody)
+            .then((response) => {
+                console.log("success!")
+                console.log(response)
+            })
+            .catch((error) => {
+                console.log("ERROR")
+            })
+    }
 }
 
 export default Voucher;
