@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to right, #F5F5F5, #e3ecff);
+  background-image: linear-gradient(to left, #F5F5F5, #e3ecff);
 }
 
 /*Nav Styles*/
@@ -9,8 +9,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(255, 244, 229);
-  color: #FF0073;
+  background: white;
+
 }
 
 .nav-link {
@@ -23,16 +23,30 @@ nav {
   text-decoration: none;
 }
 
+/*Footer Styles*/
+footer{
+  margin-top: 500px;
+}
+
+
 /*Home Page Styles*/
 header{
   max-width: 30%;
   text-align: left;
   margin-left: 20px;
 }  
+#home-p{
+  font-size: 30px;
+}
+
 #home-button{
   padding: 10px 40px;
   border-radius: 12px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#home-button > a{
+  text-decoration: none;
+  color: black;
 }
 
 /*voucher Table Styles*/
@@ -43,10 +57,14 @@ table{
   border-collapse: collapse;
 }
 
+#first-row{
+  background: lightgray;
+}
+
 th, td{
   text-align: center;
   padding:20px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #balance{

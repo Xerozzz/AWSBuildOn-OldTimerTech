@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   render() {
     return (
+      <React.Fragment>
       <header>
-        <h1 className="Jumbo">No need call ah boy liao</h1>
+        <p className="Jumbo" id="home-p">No need call ah boy liao</p>
         <h1 className="Jumbo">Majulah!</h1>
         <p>
           E-payments made simple! With Old Timer Tech, you can learn
@@ -12,8 +14,13 @@ class Home extends React.Component {
           Redeem
           e-vouchers from NTUC, Old Chang Kee and More!
         </p>
-        <a><button id="home-button">Get started!</button></a>
+        <button id="home-button">
+        {
+          <Link to="/tutorial">Get started!</Link>
+        }
+        </button>
       </header>
+      </React.Fragment>
     );
   }
 }

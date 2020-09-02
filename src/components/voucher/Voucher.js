@@ -27,11 +27,11 @@ class Voucher extends React.Component{
                     <p id="balance">Points Balance: {this.state.user_info.Balance}</p>
                 </div>
                 <table>
-                    <tr>
-                        <th>Voucher Name</th>
-                        <th>Discount Percentage</th>
-                        <th>Points Cost</th>
-                        <th>Redemption</th>
+                    <tr id="first-row">
+                        <td>Voucher Name</td>
+                        <td>Discount Percentage</td>
+                        <td>Points Cost</td>
+                        <td>Redemption</td>
                     </tr>
                     <tr>
                         <td>NTUC Voucher</td>
@@ -45,7 +45,6 @@ class Voucher extends React.Component{
     }
 
     redeemVoucher(event) {
-        event.preventDefault()
         const requestBody = {
             username: this.username,
             balance: this.state.user_info.Balance
@@ -53,8 +52,8 @@ class Voucher extends React.Component{
 
         axios.post(`https://oa27ptvv12.execute-api.ap-southeast-1.amazonaws.com/prod/vouchers`, requestBody)
             .then((response) => {
-                console.log("success!")
-                console.log(response)
+                //Redirect to thank you screen
+                window.location.href = "/thank";
             })
             .catch((error) => {
                 console.log("ERROR")
