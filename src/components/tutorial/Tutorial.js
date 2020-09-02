@@ -22,7 +22,7 @@ export default class TutorialPage extends PureComponent {
                 {
                     tutName: 'Microsoft Excel Tutorial',
                     tutProgress: '1',
-                    tutTotal: '2',
+                    tutTotal: '3',
                     tutCompleted: false
                 },
                 {
