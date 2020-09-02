@@ -52,8 +52,12 @@ class Voucher extends React.Component{
 
         axios.post(`https://oa27ptvv12.execute-api.ap-southeast-1.amazonaws.com/prod/vouchers`, requestBody)
             .then((response) => {
+            if(response.data == "Insufficient Balance!"){
+                window.alert("You have Insufficient Balance")
+            }else{
                 //Redirect to thank you screen
                 window.location.href = "/thank";
+            }
             })
             .catch((error) => {
                 console.log("ERROR")
