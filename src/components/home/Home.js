@@ -20,8 +20,9 @@ class Home extends React.Component {
         }
         </button>
       </header>
-      <img src="./public/static/img/Old-man-yeye.jpg" alt="Old man using a phone, he do be looking kinda hot doe"/>
-      <img src="./public/static/img/powered-by-aws"/>
+      
+      <img src="static/css/img/oldmanyeye.jpg" alt="old man"/>
+      <img src="static/css/img/poweredbyaws.png" alt="aws"/>
       </React.Fragment>
     );
   }
