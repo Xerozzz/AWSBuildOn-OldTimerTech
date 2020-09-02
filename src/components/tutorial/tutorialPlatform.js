@@ -22,32 +22,106 @@ export default class TutorialPlatform extends PureComponent {
         super(props);
         console.log('tutID: ' + this.props.tutID);
         // placeholder data
-        this.state = {
-            mTutorialName: "",
-            mTutorialDescription: "",
-            mTutorialHref: "",
-            tutID: this.props.tutID,
-            tutAuthor: "Teacher's Tech",
-            tutorials:
-            [
-                {
-                    tutorialName: "Microsoft Excel Tutorial - Beginners Level 1",
-                    tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the first part of a detailed beginners tutorial.",
-                    tutorialHref: "https://www.youtube.com/embed/k1VUZEVuDJ8"
-                },
-                {
-                    tutorialName: "Microsoft Excel Tutorial - Beginners Level 2",
-                    tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the second part of a detailed beginners tutorial.",
-                    tutorialHref: "https://www.youtube.com/embed/bhZckWTLkJM"
-                },
-                {
-                    tutorialName: "Microsoft Excel Tutorial - 10 Best Excel Tips for Beginners",
-                    tutorialDescription: "This is a compilation of the 10 Best Excel Tips for Beginners.",
-                    tutorialHref: "https://www.youtube.com/embed/ZthlSLYc5UQ"
+        switch (this.props.tutID)
+        {
+            case "Microsoft_Excel_Tutorial":
+                this.state = {
+                    mTutorialName: "",
+                    mTutorialDescription: "",
+                    mTutorialHref: "",
+                    tutID: this.props.tutID,
+                    tutAuthor: "Teacher's Tech",
+                    tutorials:
+                    [
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - Beginners Level 1",
+                            tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the first part of a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/k1VUZEVuDJ8"
+                        },
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - Beginners Level 2",
+                            tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the second part of a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/bhZckWTLkJM"
+                        },
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - 10 Best Excel Tips for Beginners",
+                            tutorialDescription: "This is a compilation of the 10 Best Excel Tips for Beginners.",
+                            tutorialHref: "https://www.youtube.com/embed/ZthlSLYc5UQ"
+                        }
+        
+                    ]
                 }
+                break;
+            case "Microsoft_Powerpoint_Tutorial":
+                this.state = {
+                    mTutorialName: "",
+                    mTutorialDescription: "",
+                    mTutorialHref: "",
+                    tutID: this.props.tutID,
+                    tutAuthor: "Teacher's Tech",
+                    tutorials:
+                    [
+                        {
+                            tutorialName: "Microsoft Powerpoint Tutorial - Beginners Level 1",
+                            tutorialDescription: "Microsoft Powerpoint is a powerful presentation tool that is part of Microsoft Office. This is a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/u7Tku3_RGPs"
+                        },
+                        {
+                            tutorialName: "Complete Beginner's Guide to Microsoft Powerpoint",
+                            tutorialDescription: "Microsoft Powerpoint is a powerful presentation tool that is part of Microsoft Office. This is another detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/qXinjIL7SKI"
+                        },
+                    ]
+                }
+                break;
+            case "Microsoft_Word_Tutorial":
+                this.state = {
+                    mTutorialName: "",
+                    mTutorialDescription: "",
+                    mTutorialHref: "",
+                    tutID: this.props.tutID,
+                    tutAuthor: "Teacher's Tech",
+                    tutorials:
+                    [
+                        {
+                            tutorialName: "Microsoft Word Tutorial - Beginners Level 1",
+                            tutorialDescription: "Microsoft Word is a powerful documentation tool that is part of Microsoft Office. This is a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/HC13M8FGlNc"
+                        }
+                    ]
+                }
+                break;
+            default:
+                this.state = {
+                    mTutorialName: "",
+                    mTutorialDescription: "",
+                    mTutorialHref: "",
+                    tutID: this.props.tutID,
+                    tutAuthor: "Teacher's Tech, Eduard Stinga",
+                    tutorials:
+                    [
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - Beginners Level 1",
+                            tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the first part of a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/k1VUZEVuDJ8"
+                        },
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - Beginners Level 2",
+                            tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the second part of a detailed beginners tutorial.",
+                            tutorialHref: "https://www.youtube.com/embed/bhZckWTLkJM"
+                        },
+                        {
+                            tutorialName: "Microsoft Excel Tutorial - 10 Best Excel Tips for Beginners",
+                            tutorialDescription: "This is a compilation of the 10 Best Excel Tips for Beginners.",
+                            tutorialHref: "https://www.youtube.com/embed/ZthlSLYc5UQ"
+                        }
+        
+                    ]
+                }
+                break;
 
-            ]
         }
+       
         // this.state = {
         //     mTutorialName: "",
         //     mTutorialDescription: "",

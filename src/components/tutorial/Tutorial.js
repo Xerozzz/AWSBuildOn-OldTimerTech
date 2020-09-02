@@ -26,21 +26,15 @@ export default class TutorialPage extends PureComponent {
                     tutCompleted: false
                 },
                 {
-                    tutName: 'sampleData',
-                    tutProgress: '1',
+                    tutName: 'Microsoft Powerpoint Tutorial',
+                    tutProgress: '2',
                     tutTotal: '2',
                     tutCompleted: true
                 },
                 {
-                    tutName: 'sampleData2',
+                    tutName: 'Microsoft Word Tutorial',
                     tutProgress: '1',
-                    tutTotal: '24',
-                    tutCompleted: false
-                },
-                {
-                    tutName: 'sampleData32',
-                    tutProgress: '12',
-                    tutTotal: '243',
+                    tutTotal: '1',
                     tutCompleted: false
                 }
             ]
