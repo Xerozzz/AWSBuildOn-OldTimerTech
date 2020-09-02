@@ -20,10 +20,10 @@ export default class TutorialPage extends PureComponent {
             tutorialData: 
             [
                 {
-                    tutName: 'tutorialName1',
+                    tutName: 'Microsoft Excel Tutorial',
                     tutProgress: '1',
                     tutTotal: '2',
-                    tutCompleted: true
+                    tutCompleted: false
                 },
                 {
                     tutName: 'sampleData',
@@ -60,8 +60,8 @@ export default class TutorialPage extends PureComponent {
     }
 
     render() {
-        console.log(this.state.tutorialData);
-        console.log(window.location.pathname);
+        // console.log(this.state.tutorialData);
+        // console.log(window.location.pathname);
         return(
             <div style={{height: '100vh'}}>
                 <Container fluid style={{height: '100vh'}}>
@@ -80,7 +80,7 @@ export default class TutorialPage extends PureComponent {
                             </div>
                         </Col>
                         <Col xs = {8} sm = {8} md={8} lg={8} xl={8}>
-                            <TutorialPlatform tutID={window.location.pathname.replace("/tutorialspage/", "")}/>
+                            <TutorialPlatform tutID={window.location.pathname.replace("/tutorial/", "")}/>
                         </Col>
                     </Row>    
                 </Container>

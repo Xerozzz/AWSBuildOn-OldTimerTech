@@ -21,12 +21,12 @@ export default class TutorialRow extends PureComponent
         console.log(this.props.tutName);
         // var changeTo = this.props.tutName;
     //     this.setState({ redirect: '/tutorialspage/' + this.props.tutName});
-        window.location = window.location.origin + '/tutorialspage/' + this.props.tutName;
+        window.location = window.location.origin + '/tutorial/' + this.props.tutName.split(' ').join('_');
     }
 
     render()
     {
-        const selectedItem = window.location.pathname.replace("/tutorialspage/", "");
+        const selectedItem = window.location.pathname.replace("/tutorial/", "");
         console.log(selectedItem);
         if (this.state.redirect)
         {

@@ -27,26 +27,52 @@ export default class TutorialPlatform extends PureComponent {
             mTutorialDescription: "",
             mTutorialHref: "",
             tutID: this.props.tutID,
-            tutAuthor: "PEKOPEKOPEKOPEKO",
+            tutAuthor: "Teacher's Tech",
             tutorials:
             [
                 {
-                    tutorialName: "KORO FUNK",
-                    tutorialDescription: "Yubi Yubi Yubi Yubi",
-                    tutorialHref: "https://www.youtube.com/embed/lKEqU2itOiw"
+                    tutorialName: "Microsoft Excel Tutorial - Beginners Level 1",
+                    tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the first part of a detailed beginners tutorial.",
+                    tutorialHref: "https://www.youtube.com/embed/k1VUZEVuDJ8"
                 },
                 {
-                    tutorialName: "Shirakami Fubuki Scatman",
-                    tutorialDescription: "Beat up a pineapple",
-                    tutorialHref: "https://www.youtube.com/embed/ZKiDOLr100k"
+                    tutorialName: "Microsoft Excel Tutorial - Beginners Level 2",
+                    tutorialDescription: "Microsoft Excel is a powerful spreadsheet tool that is part of Microsoft Office. This is the second part of a detailed beginners tutorial.",
+                    tutorialHref: "https://www.youtube.com/embed/bhZckWTLkJM"
                 },
                 {
-                    tutorialName: "Discommunication Alien",
-                    tutorialDescription: "D-D-Discommunication",
-                    tutorialHref: "https://www.youtube.com/embed/AAr2lHZLNyU"
+                    tutorialName: "Microsoft Excel Tutorial - 10 Best Excel Tips for Beginners",
+                    tutorialDescription: "This is a compilation of the 10 Best Excel Tips for Beginners.",
+                    tutorialHref: "https://www.youtube.com/embed/ZthlSLYc5UQ"
                 }
+
             ]
         }
+        // this.state = {
+        //     mTutorialName: "",
+        //     mTutorialDescription: "",
+        //     mTutorialHref: "",
+        //     tutID: this.props.tutID,
+        //     tutAuthor: "PEKOPEKOPEKOPEKO",
+        //     tutorials:
+        //     [
+        //         {
+        //             tutorialName: "KORO FUNK",
+        //             tutorialDescription: "Yubi Yubi Yubi Yubi",
+        //             tutorialHref: "https://www.youtube.com/embed/lKEqU2itOiw"
+        //         },
+        //         {
+        //             tutorialName: "Shirakami Fubuki Scatman",
+        //             tutorialDescription: "Beat up a pineapple",
+        //             tutorialHref: "https://www.youtube.com/embed/ZKiDOLr100k"
+        //         },
+        //         {
+        //             tutorialName: "Discommunication Alien",
+        //             tutorialDescription: "D-D-Discommunication",
+        //             tutorialHref: "https://www.youtube.com/embed/AAr2lHZLNyU"
+        //         }
+        //     ]
+        // }
     }
 
     changeTut(item)
@@ -70,6 +96,7 @@ export default class TutorialPlatform extends PureComponent {
         if (this.state.mTutorialName === "")
         {
             // at init, none selected...
+            console.log('changeTut to 0...');
             this.changeTut(this.state.tutorials[0]);
         }
         // console.log(this.props.tutID);
