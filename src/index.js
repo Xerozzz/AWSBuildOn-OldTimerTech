@@ -5,6 +5,8 @@ import App from './components/App';
 import Amplify, { Auth } from 'aws-amplify';
 import { Switch, Route, Router } from 'react-router-dom'
 import config from './aws-exports';
+// import '../public/static/css/tutorials.css'
+// import './'
 
 Amplify.configure(config);
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Row, Col } from "react-bootstrap";
 
 class Nav extends React.Component {
   render() {
@@ -27,6 +28,33 @@ class Nav extends React.Component {
     );
   }
 }
+
+// class Nav extends React.Component {
+//   render() {
+//     return (
+//       <Row>
+//         <Col xs={6} sm={6} md={6} lg={6} xl={6}>Old Timer Tech</Col>
+//         <Col xs={6} sm={6} md={6} lg={6} xl={6} className="nav-link">
+//           <Col className="nav-item" xs={4} sm={4} md={4} lg={4} xl={4}>
+//             <NavLink className="nav-link" to="/home">
+//               Home
+//             </NavLink>
+//           </Col>
+//           <Col className="nav-item" xs={4} sm={4} md={4} lg={4} xl={4}>
+//             <NavLink className="nav-link" to="/tutorial">
+//               Tutorials
+//             </NavLink>
+//           </Col>
+//           <Col className="nav-item" xs={4} sm={4} md={4} lg={4} xl={4}>
+//             <NavLink className="nav-link" to="/voucher">
+//               Vouchers
+//             </NavLink>
+//           </Col>
+//         </Col>
+//       </Row>
+//     );
+//   }
+// }
 
 export default Nav;
 

@@ -65,9 +65,6 @@ export default class TutorialPage extends PureComponent {
         return(
             <div style={{height: '100vh'}}>
                 <Container fluid style={{height: '100vh'}}>
-                    <Row>
-                            <h1 onClick={() => this.checkData(this.state.tutorialData)}>D-D-DISCOMMUNICATION</h1>
-                    </Row>
                     <Row noGutters className="nowhite" style={{height: '100%'}} >
                         <Col xs = {4} sm = {4} md={4} lg={4} xl={4}>
                             <div className="sidebar" style={{height: '100%'}} >

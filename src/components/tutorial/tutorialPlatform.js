@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import TutorialRow from './tutorialRow';
 import TutorialPagePart from './tutorialPagePart'
+// import './tutorials.css'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col } from 'react-bootstrap';
 
 import { createBrowserHistory } from 'history';
@@ -77,7 +79,7 @@ export default class TutorialPlatform extends PureComponent {
                 <Container fluid>
                     <Row className='mainTutorial'>
                         <div className='video'>
-                            <iframe width="100%" height="350" controls="controls" class="video-stream" src={this.state.mTutorialHref}>
+                            <iframe width="100%" height="350" controls="controls" className="video-stream" src={this.state.mTutorialHref}>
                             </iframe>
                         </div>
                         <div className='videoTitle'>
