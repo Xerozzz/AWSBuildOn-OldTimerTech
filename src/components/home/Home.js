@@ -5,6 +5,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <img id="oldman" src="static/css/img/oldmanyeye.jpg" alt="old man"/>
       <header>
         <p className="Jumbo" id="home-p">No need call ah boy liao</p>
         <h1 className="Jumbo">Majulah!</h1>
@@ -20,9 +21,7 @@ class Home extends React.Component {
         }
         </button>
       </header>
-      
-      <img src="static/css/img/oldmanyeye.jpg" alt="old man"/>
-      <img src="static/css/img/poweredbyaws.png" alt="aws"/>
+      <img id="aws" src="static/css/img/poweredbyaws.png" alt="aws"/>
       </React.Fragment>
     );
   }
