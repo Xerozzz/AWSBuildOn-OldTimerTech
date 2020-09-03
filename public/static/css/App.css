@@ -1,11 +1,10 @@
 .App {
-  text-align: center;
   background-image: linear-gradient(to left, #F5F5F5, #e3ecff);
 }
 
 /*Nav Styles*/
 nav {
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
@@ -15,7 +14,7 @@ nav {
 
 .nav-link {
   width: 50%;
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   align-items: center;
   list-style: none;
@@ -26,15 +25,20 @@ nav {
 /*Footer Styles*/
 footer{
   margin-top: 500px;
+  text-align: center
 }
 
 /*Home Page Styles*/
 header{
-  max-width: 30%;
+  max-width: 40%;
   text-align: left;
   margin-left: 20px;
   float: left;
 }  
+
+.h1 {
+  text-align: center;
+}
 
 #home-p{
   font-size: 30px;
@@ -65,8 +69,8 @@ header{
 
 #aws{
   position: absolute;
-  margin-left: 700px;
-  margin-top: 350px;
+  bottom: 0;
+  right:0;
   width: 150px;
   height: 50px;
 }
@@ -94,4 +98,13 @@ th, td{
 
 #voucher_page{
   font-size: x-large;
+}
+
+.Jumbo {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.bold {
+  font-weight: bold;
 }

@@ -6,8 +6,8 @@ import Tutorial from "./tutorial/Tutorial";
 import Voucher from "./voucher/Voucher";
 import Home from "./home/Home";
 import React from "react";
-import Thank from "./thank/thank"
- 
+import Thank from "./thank/thank";
+
 function App() {
   return (
     <Router>
@@ -15,7 +15,7 @@ function App() {
         <Nav />
 
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/tutorial" component={Tutorial} />
           <Route path="/voucher" component={Voucher} />
           <Route path="/thank" component={Thank} />
