@@ -28,13 +28,14 @@ footer{
   margin-top: 500px;
 }
 
-
 /*Home Page Styles*/
 header{
   max-width: 30%;
   text-align: left;
   margin-left: 20px;
+  float: left;
 }  
+
 #home-p{
   font-size: 30px;
 }
@@ -48,7 +49,27 @@ header{
   text-decoration: none;
   color: black;
 }
+#img{
+  position: relative;
+}
+#oldman{
+  position: relative;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+  width: 450px;
+  height: 300px;
+  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)));
+  mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
 
+#aws{
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 350px;
+  width: 150px;
+  height: 50px;
+}
 /*voucher Table Styles*/
 table{
   margin-left:auto;
