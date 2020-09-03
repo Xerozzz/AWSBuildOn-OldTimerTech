@@ -2,7 +2,7 @@
   background-image: linear-gradient(to left, #F5F5F5, #e3ecff) !important;
 }
 
-body{
+body {
   background-image: linear-gradient(to left, #F5F5F5, #e3ecff) !important;
 }
 /*Nav Styles*/
@@ -25,9 +25,13 @@ nav {
 }
 
 /*Footer Styles*/
-footer{
-  margin-top: 500px;
-  text-align: center
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
 }
 
 /*Home Page Styles*/
