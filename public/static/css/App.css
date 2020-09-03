@@ -9,7 +9,6 @@ nav {
   align-items: center;
   min-height: 10vh;
   background: white;
-
 }
 
 .nav-link {
@@ -35,10 +34,6 @@ header{
   margin-left: 20px;
   float: left;
 }  
-
-.h1 {
-  text-align: center;
-}
 
 #home-p{
   font-size: 30px;
@@ -74,7 +69,12 @@ header{
   width: 150px;
   height: 50px;
 }
+
 /*voucher Table Styles*/
+#voucher_page > h1 {
+  text-align: center !important;
+}
+
 table{
   margin-left:auto;
   margin-right:auto;
