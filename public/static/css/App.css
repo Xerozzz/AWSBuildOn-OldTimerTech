@@ -1,7 +1,10 @@
 .App {
-  background-image: linear-gradient(to left, #F5F5F5, #e3ecff);
+  background-image: linear-gradient(to left, #F5F5F5, #e3ecff) !important;
 }
 
+body{
+  background-image: linear-gradient(to left, #F5F5F5, #e3ecff) !important;
+}
 /*Nav Styles*/
 nav {
   display: flex !important;
@@ -68,6 +71,10 @@ header{
   right:0;
   width: 150px;
   height: 50px;
+}
+
+#thank_page {
+  text-align: center !important;
 }
 
 /*voucher Table Styles*/
