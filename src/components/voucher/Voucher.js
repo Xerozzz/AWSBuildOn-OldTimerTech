@@ -7,7 +7,7 @@ class Voucher extends React.Component{
         this.state = {
             user_info: 0
         };
-        this.username = localStorage.getItem('CognitoIdentityServiceProvider.7onc1lch198q81avn7tfmc190m.LastAuthUser')
+        this.username = localStorage.getItem('CognitoIdentityServiceProvider.6n0gvocupj7dk8bmqlbl746ba6.LastAuthUser')
         this.redeemVoucher = this.redeemVoucher.bind(this)
     }
 
