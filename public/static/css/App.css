@@ -12,6 +12,8 @@ nav {
   align-items: center;
   min-height: 10vh;
   background: white;
+  overflow: hidden;
+
 }
 
 .nav-link {
@@ -22,6 +24,10 @@ nav {
   list-style: none;
   color: #FF0073;
   text-decoration: none;
+}
+
+.nav-right {
+  float: right;
 }
 
 /*Footer Styles*/

@@ -23,7 +23,7 @@ class Nav extends React.Component {
               Vouchers
             </NavLink>
           </li>
-          <li>
+          <li className="nav-item nav-right">
             <SignOutButton />
           </li>
         </ul>
