@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Row, Col } from "react-bootstrap";
+import SignOutButton from "./SignOutButton"
 
 class Nav extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Nav extends React.Component {
         <h3>Old Timer Tech</h3>
         <ul className="nav-link">
           <li className="nav-item">
-            <NavLink className="nav-link" to="/home">
+            <NavLink className="nav-link" to="/">
               Home
             </NavLink>
           </li>
@@ -22,6 +22,9 @@ class Nav extends React.Component {
             <NavLink className="nav-link" to="/voucher">
               Vouchers
             </NavLink>
+          </li>
+          <li>
+            <SignOutButton />
           </li>
         </ul>
       </nav>
@@ -57,4 +60,3 @@ class Nav extends React.Component {
 // }
 
 export default Nav;
-
