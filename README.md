@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Clone this repo into a directory
 2. `cd` into the directory 
 3. Run `npm start` to build the project
+4. After building is complete, go to [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 Note: Build may fail due to lack of Cognito app available.
 
