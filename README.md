@@ -1,4 +1,14 @@
+# Old Timer Tech
+A project created for AWS Build On 2020 by Team CalmDownLa
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation
+1. Clone this repo into a directory
+2. `cd` into the directory 
+3. Run `npm start` to build the project
+
+Note: Build may fail due to lack of Cognito app available.
 
 ## Available Scripts
 
